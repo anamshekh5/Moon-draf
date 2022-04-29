@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Gorgeous Home Details</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        /* Style the header */
+        header {
+          background-color: #666;
+          padding:0%;
+          text-align: left;
+          font-size: 30px;
+          color: white;
+        }
+        
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+          float: left;
+          width: 30%;
+          height: 500px; /* only for demonstration, should be removed */
+          background: #ccc;
+          padding: 20px;
+        }
+        
+        /* Style the list inside the menu */
+        nav ul {
+          list-style-type: none;
+          padding: 0;
+        }
+        
+        article {
+          float: left;
+          padding: 30px;
+          width: 70%;
+          background-color: #f1f1f1;
+          height: 500px; /* only for demonstration, should be removed */
+        }
+       
+        
+        /* Clear floats after the columns */
+        section::after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Style the footer */
+        footer {
+          background-color: #777;
+          padding: 10px;
+          text-align: center;
+          color: white;
+        }
+        #footer{
+            margin-top: 20%;
+        }
+        
+        /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+        @media (max-width: 600px) {
+          nav, article {
+            width: 100%;
+            height: auto;
+          }
+        }
+
+        .fa {
+           padding: 10px;
+           font-size: 20px;
+           width: 30px;
+           text-align: center;
+           margin:5px 2px;
+           border-radius:50%;
+           text-decoration: none;
+        }
+        .fa:hover{
+            opacity:0.7;
+        }
+        .fa-facebook{
+            background:#3B5998;
+            color:white;
+        }
+        .fa-google{
+            background:#dd4b39;
+            color:white;
+        }
+        
+        .fa-twitter{
+            background:#55ACEE;
+            color:white;
+        }
+        .fa-instagram{
+            background:#125688;
+            color:white;
+        }
+        .fa-linkedin{
+            background:#007BB5;
+            color:white;
+        }
+    
+        </style>
+        </head>
+        <body>
+        
+         <h2>Rent Rs 7000</h2>
+        
+        <header>
+          <h6>home &#8594; properties</h6>
+          
+        </header>
+        
+        <section>
+          <nav>
+            
+             <input type="text" class="rent" placeholder="Your Name" ><br><br>
+             <input type="email" class="rent" placeholder="E-mail"><br><br>
+             <input type="text" class="rent" placeholder="Phone No"><br><br>
+             <textarea rows="4" cols="20" name="comment" form="usrform" placeholder="Enter text the message">
+             </textarea><br>
+             <input type="checkbox" class="rent">I agree to the <a href="#">terms of Use</a>Privacy Policy<br><br>
+             <input type="submit" value="Submit">
+         </nav>
+
+        <article class="art">
+            <div>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <img src="h1.jpeg" alt="h1" width="600" height="400" style="float:right">
+        
+            </div>
+            <div>
+                <p>
+                    <b>Date-added</b> : 28-04-2022<br>
+                    <b>Floors</b> : 1<br>
+                    <b>Area</b> : 1000 sq ft <br>
+                    <b>Year built</b> : 2011<br>
+                    <b>Status</b> : Open<br>
+                    <b>Type</b> : Gorgeous Apartment<br>
+                </p>
+            </div>
+        </article>
+          
+        </section>
+        
+        <footer id="footer">
+          <p>Footer</p>
+        </footer>
+         
+</body>
+</html>
